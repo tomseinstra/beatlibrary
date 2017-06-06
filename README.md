@@ -38,7 +38,7 @@ if left unspecified, the library will simply select the first column of data
 #### average of columns
 another special function that this library contains is the ability to calculate a set of data using the average value per row from a number of columns. To specify an average specify the following when initalising the function:
 ```javascript
-{col:'avg(column_1, column_2, ...)'
+{col:'avg(column_1, column_2, ...)'}
 ```
 make sure to wrap the columns in the avg( ) brackets and to seperate column names with comma's. Please make sure that column names do not contain whitespaces as they are stripped away and the libary will not recognise the specified column names!
 ## initialise
@@ -49,4 +49,13 @@ initialise the script by creating a new object in javascript and calling the ini
 	//if you wish to use the default settings, simply add a source file
 	object.init( {sourceFile: '<path to json file>.json'});
 </script>
+```
+###living life on the edge: customise all settings
+if you wish to customise any or all settings do so as follows
+```html
+<script type="text/javascript">
+	var object = new beat();
+	//if you wish to use the default settings, simply add a source file
+	object.init('<custom query selector>', {sourceFile: '<path to json file>.json', col:'<col name> OR avg(<column_1>, <column_2>, ...)', amplitude: '<amplitude numeric value>', delay: '<delay in ms>', speed: '<animation duration in ms>', interval: '<interval between two pulses in ms>', duration: '<duration in ms>'});
+</script>	
 ```
