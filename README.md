@@ -67,3 +67,5 @@ if you wish to customise any or all settings do so as follows
 	});
 </script>	
 ```
+## demo
+A demonstration of the library can be found on [link text itself]: http://tomseinstra.com/dev4/visual/beat.html
