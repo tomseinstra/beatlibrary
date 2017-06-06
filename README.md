@@ -50,12 +50,20 @@ initialise the script by creating a new object in javascript and calling the ini
 	object.init( {sourceFile: '<path to json file>.json'});
 </script>
 ```
-###living life on the edge: customise all settings
+### living life on the edge: customise all settings
 if you wish to customise any or all settings do so as follows
 ```html
 <script type="text/javascript">
 	var object = new beat();
 	//if you wish to use the default settings, simply add a source file
-	object.init('<custom query selector>', {sourceFile: '<path to json file>.json', col:'<col name> OR avg(<column_1>, <column_2>, ...)', amplitude: '<amplitude numeric value>', delay: '<delay in ms>', speed: '<animation duration in ms>', interval: '<interval between two pulses in ms>', duration: '<duration in ms>'});
+	object.init('<custom query selector>', {
+		sourceFile: '<path to json file>.json',
+		col:'<col name> OR avg(<column_1>, <column_2>, ...)',
+		amplitude: '<amplitude numeric value>',
+		delay: '<delay in ms>',
+		speed: '<animation duration in ms>',
+		interval: '<interval between two pulses in ms>',
+		duration: '<duration in ms>'
+	});
 </script>	
 ```
