@@ -40,7 +40,7 @@ another special function that this library contains is the ability to calculate 
 ```javascript
 {col:'avg(column_1, column_2, ...)'}
 ```
-make sure to wrap the columns in the avg( ) brackets and to seperate column names with comma's. Please make sure that column names do not contain whitespaces as they are stripped away and the libary will not recognise the specified column names!
+make sure to wrap the columns in the avg( ) brackets and to seperate column names with commas. Please make sure that column names do not contain whitespaces as they are stripped away and the libary will not recognise the specified column names!
 ## initialise
 initialise the script by creating a new object in javascript and calling the init function
 ```html
